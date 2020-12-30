@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_browse"
+        android:icon="@drawable/ic_compass"
+        android:title="@string/browse" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/nav_live"
+        android:icon="@drawable/ic_play_button_inside_a_circle"
+        android:title="@string/live" />
+    <item
+        android:id="@+id/nav_meetMe"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/meet_me" />
+    <item
+        android:id="@+id/btm_nav_pets"
+        android:icon="@drawable/ic_price_tag"
+        android:title="@string/pets" />
+
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/bg_nav_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/IvProfilePic"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:contentDescription="@string/nav_header_desc"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prateek" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="46dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/prateek_shukla"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/IvProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_2"
+        android:background="@drawable/rectangle_bg_nav"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_10"
+        android:padding="5dp"
+        android:text="@string/initial_values"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:drawableStartCompat="@drawable/ic_gold"
+        app:layout_constraintStart_toEndOf="@id/IvProfilePic"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintVertical_bias="0.636"
+        tools:layout_editor_absoluteX="140dp" />
+    <TextView
+        android:id="@+id/tvDiamonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingEnd="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_10"
+        android:padding="5dp"
+        android:background="@drawable/rectangle_bg_nav"
+        android:text="@string/initial_values"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:drawableStartCompat="@drawable/ic_gems"
+        app:layout_constraintStart_toEndOf="@id/tvGold"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintVertical_bias="0.636"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <ImageButton
+        android:id="@+id/IbProfileSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

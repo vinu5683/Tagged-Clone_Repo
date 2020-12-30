@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_live">
+
+    <fragment
+        android:id="@+id/nav_live"
+        android:name="com.vk77492.taggedclone.ui.live.LiveFragment"
+        android:label="@string/live_text"
+        tools:layout="@layout/fragment_live" />
+
+    <fragment
+        android:id="@+id/nav_meetMe"
+        android:name="com.vk77492.taggedclone.ui.meetme.MeetMeFragment"
+        android:label="@string/meet_me"
+        tools:layout="@layout/fragment_meetme" />
+
+    <fragment
+        android:id="@+id/nav_browse"
+        android:name="com.vk77492.taggedclone.ui.browse.BrowseFragment"
+        android:label="@string/browse"
+        tools:layout="@layout/fragment_browse" />
+    <fragment
+        android:id="@+id/nav_play"
+        android:name="com.vk77492.taggedclone.ui.play.PlayFragment"
+        android:label="@string/play"
+        tools:layout="@layout/fragment_play" />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.vk77492.taggedclone.ui.chat.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/nav_profileViewers"
+        android:name="com.vk77492.taggedclone.ui.profileviewers.ProfileFragment"
+        android:label="@string/profile_viewers"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_likesYou"
+        android:name="com.vk77492.taggedclone.ui.likes.LikeFragment"
+        android:label="@string/likes_you"
+        tools:layout="@layout/fragment_like" />
+
+    <fragment
+        android:id="@+id/btm_nav_pets"
+        android:name="com.vk77492.taggedclone.ui.pets.PetFragment"
+        android:label="Pets"
+        tools:layout="@layout/fragment_pets" />
+
+</navigation>
