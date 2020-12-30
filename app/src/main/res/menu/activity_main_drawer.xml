@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_play_button_inside_a_circle"
+            android:title="@string/live" />
+        <item
+            android:id="@+id/nav_meetMe"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/meet_me" />
+        <item
+            android:id="@+id/nav_browse"
+            android:icon="@drawable/ic_compass"
+            android:title="@string/browse" />
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@drawable/ic_smile"
+            android:title="@string/play" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/nav_profileViewers"
+            android:icon="@drawable/ic_view"
+            android:title="@string/profile_viewers" />
+        <item
+            android:id="@+id/nav_likesYou"
+            android:icon="@drawable/ic_star"
+            android:title="@string/likes_you" />
+    </group>
+
+    <item android:title="@string/communication">
+        <menu>
+            <item
+                android:id="@+id/nav_fav"
+                android:icon="@drawable/ic_baseline_verified_user_24"
+                android:title="@string/favorites" />
+            <item
+                android:id="@+id/nav_inviteFriends"
+                android:icon="@drawable/ic_user2"
+                android:title="@string/invite_friends" />
+            <item
+                android:id="@+id/nav_friends"
+                android:icon="@drawable/ic_friends"
+                android:title="@string/friends" />
+        </menu>
+    </item>
+
+    <item android:title="@string/more_fum">
+        <menu>
+            <item
+                android:id="@+id/nav_goLive"
+                android:icon="@drawable/ic_live_streaming"
+                android:title="@string/go_live" />
+            <item
+                android:id="@+id/nav_joinPremium"
+                android:icon="@drawable/ic_premium"
+                android:title="@string/join_premium" />
+            <item
+                android:id="@+id/nav_getGold"
+                android:icon="@drawable/ic_gold"
+                android:title="@string/get_gold" />
+        </menu>
+    </item>
+
+</menu>
