@@ -7,6 +7,9 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="zayn_malik01">Zayn_malik01</string>
+    <string name="_24_london_england">24 - London,England</string>
+    <string name="single_option_opener">single option opener</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -50,4 +53,8 @@
     <string name="are_you_searching_for_the_real_fun_in_life">Are you searching for the real fun in life?</string>
     <string name="next">next</string>
     <string name="skip">skip</string>
+    <string name="image22">image22</string>
+    <string name="image23">image23</string>
+    <string name="image33">image33</string>
+    <string name="image34">image34</string>
 </resources>
