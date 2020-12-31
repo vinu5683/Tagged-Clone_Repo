@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_nav_color">#F1F1F1</color>
     <color name="gray">#c4c4c4</color>
-    <color name="tagged_official">#ff5500</color>
+    <color name="tagged_official">#2acaca</color>
     <color name="tagged_unofficial">#e7008a</color>
 
     <color name="active_dot_color">#2ACACA</color>
