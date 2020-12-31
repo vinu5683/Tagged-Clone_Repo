@@ -2,11 +2,13 @@ package com.vk77492.taggedclone;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -24,6 +26,8 @@ import androidx.appcompat.widget.Toolbar;
 public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    boolean dblClickBack = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +63,24 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    //Resolving single click back Button Issue
+    @Override
+    public void onBackPressed() {
+        if (dblClickBack) {
+            super.onBackPressed();
+            return;
+        }
+        this.dblClickBack = true;
+        Toast.makeText(this, "Click back again to exit", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                dblClickBack=false;
+            }
+        }, 2000);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -69,6 +91,7 @@ public class HomeActivity extends AppCompatActivity {
         return true;
     }
 
+    //opening ProfileSetting activity
     public void openProfileSettings(){
         ImageButton mIbProfileSettings = findViewById(R.id.IbProfileSettings);
         mIbProfileSettings.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +102,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
-
+    //opening Application Settings Activity
     public void goBackNavigation(Menu menu,int menuId, int itemId){
         final MenuInflater inflater = getMenuInflater();
         inflater.inflate(menuId, menu);

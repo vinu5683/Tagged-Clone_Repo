@@ -9,5 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_nav_color">#F1F1F1</color>
     <color name="gray">#c4c4c4</color>
-    <color name="tagged_official">#2ACACA</color>
+    <color name="tagged_official">#ff5500</color>
+    <color name="tagged_unofficial">#e7008a</color>
+
+    <color name="active_dot_color">#2ACACA</color>
+    <color name="inactive_dot_color">#ffffff</color>
+    <color name="color_slide_3">#0099ff</color>
+    <color name="color_slide_1">#5000ca</color>
+    <color name="color_slide_2">#e7008a</color>
 </resources>

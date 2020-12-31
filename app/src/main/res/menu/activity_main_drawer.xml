@@ -10,7 +10,7 @@
             android:title="@string/live" />
         <item
             android:id="@+id/nav_meetMe"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_handshake"
             android:title="@string/meet_me" />
         <item
             android:id="@+id/nav_browse"

@@ -34,4 +34,20 @@
     <string name="browse">Browse</string>
     <string name="pets">Pets</string>
     <string name="friends">Friends</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="or">OR</string>
+    <string name="skip_login">Skip Login</string>
+    <string name="new_user_register_now">New User? Register Now</string>
+    <string name="searching_for_a_relationship">Searching for a relationship?</string>
+    <string name="we_make_that_easy_for_you">We make that easy for you.</string>
+    <string name="our_algorithm_matches_more_effectively">Our algorithm matches more effectively</string>
+    <string name="confused_about_matching">Confused about matching?</string>
+    <string name="are_you_feeling_alone">Are you Feeling Alone?</string>
+    <string name="are_you_searching_for_the_real_fun_in_life">Are you searching for the real fun in life?</string>
+    <string name="next">next</string>
+    <string name="skip">skip</string>
 </resources>
