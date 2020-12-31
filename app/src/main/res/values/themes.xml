@@ -3,7 +3,7 @@
     <style name="Theme.TaggedClone" parent="Theme.Design.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/tagged_official</item>
-        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorPrimaryVariant">@color/tagged_official</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/tagged_official</item>
