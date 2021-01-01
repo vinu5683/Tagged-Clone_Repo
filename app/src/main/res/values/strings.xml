@@ -50,4 +50,94 @@
     <string name="are_you_searching_for_the_real_fun_in_life">Are you searching for the real fun in life?</string>
     <string name="next">next</string>
     <string name="skip">skip</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="location">Location</string>
+    <string name="near_by">Near By</string>
+    <string name="other_location">Other Location</string>
+    <string name="distance_to_cover">Distance To Cover</string>
+    <string name="details">Details</string>
+    <string name="relationship_status">Relationship Status</string>
+    <string name="ethnicity">Ethnicity</string>
+
+    <string-array name="status_array">
+        <item>Select status</item>
+        <item>Single</item>
+        <item>Dating</item>
+        <item>In a relationship</item>
+        <item>Engaged</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Separated</item>
+        <item>Widowed</item>
+        <item>It\'s complicated</item>
+    </string-array>
+
+    <string-array name="ethnicity_array">
+        <item>No preferences</item>
+        <item>African American</item>
+        <item>Asian</item>
+        <item>Caucasian//white</item>
+        <item>East Indian</item>
+        <item>Middle Eastern</item>
+        <item>Native American</item>
+        <item>Pacific Islander</item>
+        <item>Other</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_out">Log out</string>
+    <string name="contact_us">Contact us</string>
+    <string name="tagged_v9_13_1">Tagged (v9.13.1)</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="manage_bouncers">Manage Bouncers</string>
+    <string name="cancel_account">Cancel Account</string>
+    <string name="change_password">Change Password</string>
+    <string name="account">Account</string>
+    <string name="push">Push</string>
+    <string name="types">Types</string>
+    <string name="live_video">Live video</string>
+    <string name="modes">Modes</string>
+    <string name="message">Message</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="friend_requests_accepted">Friend requests accepted</string>
+    <string name="meet_me_likes_you">Meet Me likes you</string>
+    <string name="meet_me_matches">Meet Me matches</string>
+    <string name="pets_brought_from_you">Pets brought from you</string>
+    <string name="pets_brought_you">Pets brought you</string>
+    <string name="luv">Luv</string>
+    <string name="vip_subscription">VIP subscription</string>
+    <string name="_3_months">3 Months &#128293;</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="_20_97_auto_renewing">$20.97 auto-renewing</string>
+    <string name="_1_month">1 month</string>
+    <string name="_9_99_auto_renewing">$9.99 auto-renewing</string>
+    <string name="_6_month">6 month</string>
+    <string name="_29_94_auto_renewing">$29.94 auto-renewing</string>
+    <string name="_4_99_month">($4.99/month)</string>
+    <string name="full_price">Full Price</string>
+    <string name="save_50">Save 50%</string>
+    <string name="save_30">Save 30%</string>
+    <string name="_9_99_month">($9.99/month)</string>
+    <string name="_6_99_month">($6.99/month)</string>
+    <string name="you_can">You can cancel at any time. \n When you purchase a subscription,
+        the amount will be deducted from your Google Pay account. 24 hourse before the expiry
+        of the current subscription term. your account will be charged for a renewal.
+        After a purchase, the automatic renewal can be cancelled of anytime on Google Pay</string>
+    <string name="continu">Continue</string>
+    <string name="redpassion">Redpassion &#128293;</string>
+    <string name="nisha">Nisha</string>
+    <string name="other_details">Other details</string>
+    <string name="nameofgirl">Redpassion</string>
+    <string name="_1_person_viewed_your_profile">1 person viewed your profile.</string>
+    <string name="find_out_who_by_joining_vip">Find out who by joining VIP</string>
+    <string name="join_vpn">Join vpn</string>
+    <string name="no_likes_received_yet">No likes received yet.</string>
+    <string name="the_more_you_play_meet_me_the_people_will_n_see_you">The more you play Meet Me, the people will see you</string>
+    <string name="play_meet_me">Play meet me</string>
+    <string name="tagged_is_more_fun_with_friends">Tagged is more fun with friends.</string>
+    <string name="send_invites_to_your_friends">Send invites to your friends</string>
+    <string name="copy_invite_link">Copy invite link</string>
 </resources>

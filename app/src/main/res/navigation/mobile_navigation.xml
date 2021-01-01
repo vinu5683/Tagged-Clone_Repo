@@ -16,6 +16,11 @@
         android:name="com.vk77492.taggedclone.ui.meetme.MeetMeFragment"
         android:label="@string/meet_me"
         tools:layout="@layout/fragment_meetme" />
+<fragment
+        android:id="@+id/nav_friends"
+        android:name="com.vk77492.taggedclone.ui.friends.FriendsFragment"
+        android:label="@string/friends"
+        tools:layout="@layout/fragment_friends" />
 
     <fragment
         android:id="@+id/nav_browse"
@@ -39,15 +44,26 @@
         android:label="@string/profile_viewers"
         tools:layout="@layout/fragment_profile" />
     <fragment
+        android:id="@+id/nav_inviteFriends"
+        android:name="com.vk77492.taggedclone.ui.invitefriends.InviteFriendsFragment"
+        android:label="@string/invite_friends"
+        tools:layout="@layout/fragment_invitefriends" />
+    <fragment
         android:id="@+id/nav_likesYou"
         android:name="com.vk77492.taggedclone.ui.likes.LikeFragment"
         android:label="@string/likes_you"
         tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/nav_fav"
+        android:name="com.vk77492.taggedclone.ui.favorites.FavoriteFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorites" />
 
     <fragment
         android:id="@+id/btm_nav_pets"
         android:name="com.vk77492.taggedclone.ui.pets.PetFragment"
         android:label="Pets"
         tools:layout="@layout/fragment_pets" />
+
 
 </navigation>

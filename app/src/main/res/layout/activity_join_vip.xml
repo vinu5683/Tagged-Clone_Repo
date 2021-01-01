@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinVip">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TaggedClone.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Profile_Setting_Push"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Join VIP" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:elevation="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_100"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/captionDrawableCrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/sp_20"
+                android:padding="@dimen/dp_10"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/black"
+                android:drawablePadding="@dimen/dp_30"
+                android:text="Meeting new people is \n easier with VIP"
+                app:drawableStartCompat="@drawable/ic_crown" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:elevation="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cv1"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_vip_join_likes_you"
+             />
+    </androidx.cardview.widget.CardView>
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cv1"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_100"
+            />
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_100"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_100"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv3months"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/cv1"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/_3_months"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_80"
+        />
+    <TextView
+        android:id="@+id/tvfirstline"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="20dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tv3months"
+        android:text="@string/_20_97_auto_renewing"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+    <TextView
+        android:id="@+id/tcsecondline"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="20dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tvfirstline"
+        android:text="@string/_6_99_month"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+    <TextView
+        android:id="@+id/last1"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="20dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tcsecondline"
+        android:text="@string/most_popular"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+
+    <TextView
+        android:id="@+id/tv3months2"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintTop_toBottomOf="@id/last1"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/_1_month"
+        android:gravity="bottom"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_80"
+        />
+    <TextView
+        android:id="@+id/tvfirstline2"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="20dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tv3months2"
+        android:text="@string/_9_99_auto_renewing"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+    <TextView
+        android:id="@+id/tcsecondline2"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="40dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tvfirstline2"
+        android:text="@string/_9_99_month"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+
+    <TextView
+        android:id="@+id/tv3months3"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintTop_toBottomOf="@id/tcsecondline2"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/_6_month"
+        android:gravity="bottom"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_80"
+        />
+    <TextView
+        android:id="@+id/tvfirstline3"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="20dp"
+        android:paddingStart="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/tv3months3"
+        android:text="@string/_29_94_auto_renewing"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        />
+
+    <TextView
+        android:id="@+id/tcsecondline3"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="30dp"
+        android:paddingStart="@dimen/dp_80"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="@string/_4_99_month"
+        app:layout_constraintStart_toEndOf="@id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@id/tvfirstline3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_30"
+        android:textColor="#5C0606"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvfirstline"
+        app:layout_constraintTop_toBottomOf="@+id/cv2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_price"
+        android:textColor="#5C0606"
+app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvfirstline2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_50"
+        android:textColor="#5C0606"
+        app:layout_constraintBottom_toTopOf="@+id/tcsecondline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvfirstline3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        android:text="@string/you_can"
+        android:paddingTop="@dimen/dp_20"
+        android:gravity="center|top"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@color/tagged_official"
+    android:textColor="@color/white"
+    android:text="@string/continu"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

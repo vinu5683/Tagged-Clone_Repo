@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.likes.LikeFragment">
+    tools:context=".ui.invitefriends.InviteFriendsFragment">
 
     <View
         android:id="@+id/view"
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="@dimen/dp_200"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
         android:layout_marginBottom="@dimen/dp_250"
-        android:background="@drawable/ic_vip_join_likes_you"
-
+        android:background="@drawable/ic_invite_friend_nonincentive"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +26,7 @@
         android:fontFamily="@font/lato"
         android:textColor="@color/light_dark"
         android:textStyle="bold"
-        android:text="@string/no_likes_received_yet"
+        android:text="@string/tagged_is_more_fun_with_friends"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -43,12 +42,13 @@
         android:gravity="center"
         android:paddingStart="@dimen/dp_30"
         android:paddingEnd="@dimen/dp_30"
-        android:text="@string/the_more_you_play_meet_me_the_people_will_n_see_you"
+        android:text="@string/send_invites_to_your_friends"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
+        android:id="@+id/btnInviteFriends"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="@dimen/dp_5"
@@ -57,8 +57,24 @@
         android:textSize="@dimen/sp_16"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:text="@string/play_meet_me"
+        android:text="@string/invite_friends"
         android:background="@color/tagged_official"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/btnInviteFriends"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/gray_medium"
+        android:text="@string/copy_invite_link"
+        android:background="@color/white"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

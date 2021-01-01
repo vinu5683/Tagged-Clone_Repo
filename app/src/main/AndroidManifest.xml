@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaggedClone">
-        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".FavoriteActivity"></activity>
+        <activity android:name=".JoinVip" />
+        <activity android:name=".ProfileSettingsPush" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".Login_Activity" />
         <activity
             android:name=".ProfileSettings"

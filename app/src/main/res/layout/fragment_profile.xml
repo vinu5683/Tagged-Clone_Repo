@@ -6,17 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".ui.profileviewers.ProfileFragment">
 
-    <TextView
-        android:id="@+id/text_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginBottom="@dimen/dp_250"
+        android:background="@drawable/ic_vision"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/sp_24"
+        android:fontFamily="@font/lato"
+        android:textColor="@color/light_dark"
+        android:textStyle="bold"
+        android:text="@string/_1_person_viewed_your_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textSize="@dimen/sp_18"
+        android:fontFamily="@font/lato"
+        android:textColor="@color/gray_medium"
+        android:textStyle="bold"
+        android:text="@string/find_out_who_by_joining_vip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/textView11"
+        android:layout_margin="@dimen/dp_40"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/join_vpn"
+        android:background="@color/tagged_official"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

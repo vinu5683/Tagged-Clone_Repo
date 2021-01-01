@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AppSettings">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topProfileSettingsActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.TaggedClone.AppBarOverlay"
@@ -14,21 +16,111 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
-            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
             android:id="@+id/toolbar_Profile_Setting"
             android:layout_width="match_parent"
-            app:title="Settings"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Settings" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/notificationCaption"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is Profile Setting Activity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="20dp"
+        android:text="@string/title_notifications"
+        android:textColor="@color/tagged_official"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/topProfileSettingsActionBar" />
+
+    <Button
+        android:id="@+id/btnPush"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/push"
+        app:layout_constraintTop_toBottomOf="@+id/notificationCaption" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@+id/btnPush" />
+
+    <TextView
+        android:id="@+id/accountCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/account"
+        android:textColor="@color/tagged_official"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/btnEmail" />
+
+    <Button
+        android:id="@+id/btnVIPSub"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/vip_subscription"
+        app:layout_constraintTop_toBottomOf="@+id/accountCaption" />
+
+    <Button
+        android:id="@+id/btnPassChange"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/change_password"
+        app:layout_constraintTop_toBottomOf="@+id/btnVIPSub" />
+
+    <Button
+        android:id="@+id/btnCancelAccount"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/cancel_account"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassChange" />
+
+    <Button
+        android:id="@+id/btnManageBouncers"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/manage_bouncers"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelAccount" />
+
+    <Button
+        android:id="@+id/btnBlockedUsers"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/blocked_users"
+        app:layout_constraintTop_toBottomOf="@+id/btnManageBouncers" />
+
+    <TextView
+        android:id="@+id/versionCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/tagged_v9_13_1"
+        android:textColor="@color/tagged_official"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/btnBlockedUsers" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/contact_us"
+        app:layout_constraintTop_toBottomOf="@+id/versionCaption" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        style="@style/profileSettingStyle"
+        android:text="@string/log_out"
+        app:layout_constraintTop_toBottomOf="@+id/btnContactUs" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

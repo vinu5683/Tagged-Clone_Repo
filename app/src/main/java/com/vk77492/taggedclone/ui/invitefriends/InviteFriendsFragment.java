@@ -1,4 +1,4 @@
-package com.vk77492.taggedclone.ui.likes;
+package com.vk77492.taggedclone.ui.invitefriends;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,15 +13,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.vk77492.taggedclone.R;
-import com.vk77492.taggedclone.ui.live.LiveViewModel;
-import com.vk77492.taggedclone.ui.profileviewers.ProfileViewModel;
 
-public class LikeFragment extends Fragment {
+public class InviteFriendsFragment extends Fragment {
+
+    private InviteFriendsViewModel inviteFriendsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        LikeViewModel likeViewModel = new ViewModelProvider(this).get(LikeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_like, container, false);
+        inviteFriendsViewModel =
+                new ViewModelProvider(this).get(InviteFriendsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_invitefriends, container, false);
+
         return root;
     }
 }
