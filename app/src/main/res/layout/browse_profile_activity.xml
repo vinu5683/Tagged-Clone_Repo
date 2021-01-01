@@ -7,15 +7,17 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:columnCount="2"
         android:rowCount="1"
-        android:columnCount="2">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            >
+            android:layout_margin="@dimen/dp_5">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,13 +29,12 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/john_wick"
-                    />
+                    android:src="@drawable/john_wick" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="John Wick"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -41,9 +42,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="35, Las Vegas, California"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="35, Las Vegas, California"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -52,8 +53,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_5"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,18 +62,17 @@
                 android:orientation="vertical">
 
 
-
                 <ImageView
                     android:layout_width="180dp"
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/profile_image"/>
+                    android:src="@drawable/profile_image" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Derick"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -80,9 +80,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="24, Las London, UK"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="24, Las London, UK"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -92,8 +92,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,13 +105,12 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/girl_profile_image_3"
-                    />
+                    android:src="@drawable/girl_profile_image_3" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Ashley Franklin"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -119,9 +118,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="34, Vancouver, Australia"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="34, Vancouver, Australia"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -130,8 +129,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -148,7 +147,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Scot McCall"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -156,9 +155,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="25, Beacon Hills, Indiana"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="25, Beacon Hills, Indiana"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -168,8 +167,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -181,13 +180,12 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/default_user_image"
-                    />
+                    android:src="@drawable/default_user_image" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Prince Cool"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -195,9 +193,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="26, United Kingdom"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="26, United Kingdom"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -206,8 +204,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -224,7 +222,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Peter Hale"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -232,9 +230,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="24, Vancouver, Australia"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="24, Vancouver, Australia"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -244,8 +242,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -257,13 +255,12 @@
                     android:layout_height="180dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/girl_profile_image_2"
-                    />
+                    android:src="@drawable/girl_profile_image_2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Ashley Franklin"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -271,9 +268,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="21, Seoul, Korea"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="21, Seoul, Korea"
                     android:textSize="10sp" />
 
             </LinearLayout>
@@ -282,8 +279,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardElevation="10dp">
+            android:layout_margin="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_10">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -300,7 +297,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:text="Scot McCall"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -308,9 +305,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:text="25, Beacon Hills, Indiana"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:paddingBottom="8dp"
+                    android:text="25, Beacon Hills, Indiana"
                     android:textSize="10sp" />
 
             </LinearLayout>
