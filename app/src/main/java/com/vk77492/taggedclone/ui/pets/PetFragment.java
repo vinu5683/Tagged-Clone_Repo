@@ -24,13 +24,7 @@ public class PetFragment extends Fragment {
         petViewModel =
                 new ViewModelProvider(this).get(PetViewModel.class);
         View root = inflater.inflate(R.layout.fragment_pets, container, false);
-        final TextView textView = root.findViewById(R.id.text_pet);
-        petViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

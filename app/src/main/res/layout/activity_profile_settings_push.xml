@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSettingsPush">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TaggedClone.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Profile_Setting_Push"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Notifications" />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TextView
+        android:id="@+id/captionModes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_30"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        android:text="@string/modes"
+        android:textSize="@dimen/sp_20"
+        />
+
+    <TextView
+        android:id="@+id/captionTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/types"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/tagged_official"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captionModes" />
+
+    <TextView
+        android:id="@+id/captionMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionTypes"
+        android:text="@string/message"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionMessage"
+        app:layout_constraintTop_toTopOf="@id/captionMessage"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <TextView
+        android:id="@+id/captionFriendRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionMessage"
+        android:text="@string/friend_requests"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionFriendRequests"
+        app:layout_constraintTop_toTopOf="@id/captionFriendRequests"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionFriendRequestsAccepted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionFriendRequests"
+        android:text="@string/friend_requests_accepted"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionFriendRequestsAccepted"
+        app:layout_constraintTop_toTopOf="@id/captionFriendRequestsAccepted"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionMeetMeLikesYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionFriendRequestsAccepted"
+        android:text="@string/meet_me_likes_you"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionMeetMeLikesYou"
+        app:layout_constraintTop_toTopOf="@id/captionMeetMeLikesYou"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionMeetMeMatches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionMeetMeLikesYou"
+        android:text="@string/meet_me_matches"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionMeetMeMatches"
+        app:layout_constraintTop_toTopOf="@id/captionMeetMeMatches"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionPetsBroughtFromYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionMeetMeMatches"
+        android:text="@string/pets_brought_from_you"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionPetsBroughtFromYou"
+        app:layout_constraintTop_toTopOf="@id/captionPetsBroughtFromYou"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionPetsBroughtYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionPetsBroughtFromYou"
+        android:text="@string/pets_brought_you"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionPetsBroughtYou"
+        app:layout_constraintTop_toTopOf="@id/captionPetsBroughtYou"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/captionLuv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionPetsBroughtYou"
+        android:text="@string/luv"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionLuv"
+        app:layout_constraintTop_toTopOf="@id/captionLuv"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <TextView
+        android:id="@+id/captionProfileViewers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionLuv"
+        android:text="@string/profile_viewers"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionProfileViewers"
+        app:layout_constraintTop_toTopOf="@id/captionProfileViewers"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    <TextView
+        android:id="@+id/captionLiveVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/captionProfileViewers"
+        android:text="@string/live_video"
+        android:textSize="@dimen/sp_20"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumbTint="@color/tagged_official"
+        android:checked="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@id/captionLiveVideo"
+        app:layout_constraintTop_toTopOf="@id/captionLiveVideo"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

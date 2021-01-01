@@ -23,6 +23,7 @@
         android:fontFamily="@font/lato"
         android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
         android:text="@string/skip"
+        android:textColor="@color/white"
         android:paddingStart="@dimen/dp_5"
         android:textStyle="bold"
         android:background="@null"
