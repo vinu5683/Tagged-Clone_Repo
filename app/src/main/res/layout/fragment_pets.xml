@@ -7,10 +7,6 @@
     android:layout_marginBottom="@dimen/dp_80"
     tools:context=".ui.pets.PetFragment">
 
-
-
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
