@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/dp_80"
     tools:context=".ui.pets.PetFragment">
-
-
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
         tools:context=".MainActivity">
 
         <TextView
@@ -32,10 +30,9 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="400dp"
-            android:layout_height="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:elevation="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -504,7 +501,7 @@
                     android:layout_height="34dp"
                     android:layout_gravity="center|end"
                     android:layout_marginEnd="20dp"
-                    android:background="@color/teal_200"
+                    android:background="@color/tagged_official"
                     android:text="@string/buy_gold"
                     android:textColor="@color/white" />
 
@@ -554,7 +551,7 @@
                     android:layout_height="34dp"
                     android:layout_gravity="center|end"
                     android:layout_marginEnd="20dp"
-                    android:background="@color/teal_200"
+                    android:background="@color/tagged_official"
                     android:text="@string/watch_video"
                     android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
@@ -745,7 +742,7 @@
                     android:layout_height="37dp"
                     android:layout_marginStart="170dp"
                     android:layout_marginTop="165dp"
-                    android:backgroundTint="@color/teal_200"
+                    android:backgroundTint="@color/tagged_official"
                     android:text="@string/buy_back"
                     android:textColor="@color/white" />
 

@@ -4,152 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dp_30"
     tools:context=".ui.meetme.MeetMeFragment">
 
-
-
-    <ImageView
+    <ImageButton
         android:id="@+id/Name_of_pic"
-        android:layout_width="353dp"
-        android:layout_height="417dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400"
         android:contentDescription="@android:string/unknownName"
         android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:layout_constraintVertical_bias="0.244"
+        app:srcCompat="@drawable/girl8" />
+
 
     <TextView
         android:id="@+id/Zayn_malik01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/zayn_malik01"
-        android:textColor="@color/design_default_color_on_primary"
+        android:text="@string/riya"
+        android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        android:textSize="30sp"
+        android:textSize="@dimen/sp_25"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/address"
+        app:layout_constraintStart_toStartOf="@id/Name_of_pic"
+      />
 
     <TextView
-        android:id="@+id/Age_Place"
+        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_24_london_england"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        android:textColor="#DDDDDD"
+        android:text="26 . F . Kolkata"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintTop_toBottomOf="@id/Zayn_malik01"
+        app:layout_constraintBottom_toBottomOf="@id/Name_of_pic"
+        app:layout_constraintStart_toStartOf="@id/Zayn_malik01"
+        />
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:elevation="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:layout_marginStart="@dimen/dp_30"
+        android:src="@drawable/ic_refresh__1_"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
-
-    <ImageView
-        android:id="@+id/DotsOption"
-        android:layout_width="24dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/single_option_opener"
+        app:layout_constraintEnd_toStartOf="@+id/close"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628"
-        app:srcCompat="@drawable/ic_ellipsis__1_" />
+        app:layout_constraintTop_toBottomOf="@id/Name_of_pic"
+       />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="100dp"
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:elevation="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toStartOf="@id/star"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833">
+        app:layout_constraintStart_toEndOf="@id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/Name_of_pic"
+        />
 
-        <ImageView
-            android:id="@+id/refreshButton"
-            android:layout_width="25dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_refresh__1_"
-            android:contentDescription="@string/image22" />
 
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="100dp"
+    <ImageButton
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:elevation="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_star2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833">
-
-        <ImageView
-            android:id="@+id/Cross"
-            android:layout_width="30dp"
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_close"
-            android:contentDescription="@string/image23" />
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toEndOf="@id/close"
+        app:layout_constraintEnd_toStartOf="@+id/medel"
+        app:layout_constraintTop_toBottomOf="@+id/Name_of_pic"
+        tools:layout_editor_absoluteX="126dp"/>
+    <ImageButton
+        android:id="@+id/medel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:elevation="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:src="@drawable/ic_medal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/star"
+        app:layout_constraintTop_toBottomOf="@+id/Name_of_pic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833">
-        <ImageView
-            android:id="@+id/Star"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_star2"
-
-            android:contentDescription="@string/image34" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="100dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833">
-        <ImageView
-            android:id="@+id/Star1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_medal"
-            android:contentDescription="@string/image33" />
-    </androidx.cardview.widget.CardView>
->>>>>>> 17ea8eceeda8bf0674659204ef4f217f9c0df992
+        tools:layout_editor_absoluteX="126dp"/>
 
 
 
