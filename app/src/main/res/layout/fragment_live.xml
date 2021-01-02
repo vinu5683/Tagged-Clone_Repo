@@ -6,19 +6,409 @@
     android:layout_height="match_parent"
     tools:context=".ui.live.LiveFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_80"
+            android:layout_marginEnd="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imgJohn"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl1" />
+
+                        <ImageView
+                            android:id="@+id/imgVOne"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgJohn"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/danny"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile1"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl2" />
+
+                        <ImageView
+                            android:id="@+id/imgV2"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile1"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/redpassion"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile2"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl3" />
+
+                        <ImageView
+                            android:id="@+id/imgV3"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile2"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/nisha"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile3"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl4" />
+
+                        <ImageView
+                            android:id="@+id/imgV4"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile3"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/sunitha_j"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile4"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl5" />
+
+                        <ImageView
+                            android:id="@+id/imgV5"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile4"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/aarohi"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile6"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl6" />
+
+                        <ImageView
+                            android:id="@+id/imgV6"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile6"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/kushi_keerthana"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile7"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl7" />
+
+                        <ImageView
+                            android:id="@+id/imgV7"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile7"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="Tonia Joshi"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile8"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl8" />
+
+                        <ImageView
+                            android:id="@+id/imgV8"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile8"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/riya"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProfile9"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl9" />
+
+                        <ImageView
+                            android:id="@+id/imgV9"
+                            android:layout_width="@dimen/dp_15"
+                            android:layout_height="@dimen/dp_15"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/ic_viewers_24px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgProfile9"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:text="@string/rashmika_m"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

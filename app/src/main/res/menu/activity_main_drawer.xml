@@ -51,21 +51,4 @@
         </menu>
     </item>
 
-    <item android:title="@string/more_fum">
-        <menu>
-            <item
-                android:id="@+id/nav_goLive"
-                android:icon="@drawable/ic_live_streaming"
-                android:title="@string/go_live" />
-            <item
-                android:id="@+id/nav_joinPremium"
-                android:icon="@drawable/ic_premium"
-                android:title="@string/join_premium" />
-            <item
-                android:id="@+id/nav_getGold"
-                android:icon="@drawable/ic_gold"
-                android:title="@string/get_gold" />
-        </menu>
-    </item>
-
 </menu>

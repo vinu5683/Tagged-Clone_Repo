@@ -217,4 +217,7 @@
     <string name="riya">Riya</string>
     <string name="rashmika_m">RashmiKa M</string>
     <string name="danny">Danny</string>
+    <string name="register">Register</string>
+    <string name="register_here">Register Here</string>
+    <string name="confirm_password">Confirm password</string>
 </resources>

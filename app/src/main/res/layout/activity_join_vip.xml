@@ -87,6 +87,7 @@
         >
         <RadioButton
             android:layout_width="wrap_content"
+            android:checked="true"
             android:layout_height="@dimen/dp_100"
             />
         <RadioButton
