@@ -6,6 +6,8 @@ which is one of the most popular dating app which established in October 2004, i
 <h1>How we made it (story)</h1>
 https://vinod568312.medium.com/sharing-how-we-created-a-tagged-clone-dating-app-in-just-3-days-3a4ad5684aed
 
+https://sainath01.hashnode.dev/developing-tagged-app-clone
+
 <h1>Screenshots</h1>
 
 Splash
