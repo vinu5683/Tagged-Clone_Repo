@@ -55,7 +55,7 @@
         android:textSize="@dimen/sp_16"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:text="@string/join_vpn"
+        android:text="@string/join_vip"
         android:background="@color/tagged_official"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

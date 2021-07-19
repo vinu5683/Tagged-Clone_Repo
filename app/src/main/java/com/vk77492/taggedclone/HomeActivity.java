@@ -29,12 +29,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener
-        {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     boolean dblClickBack = false;
-    boolean flag=false;
+    boolean flag = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +45,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        /**
+         * Passing each menu ID as a set of Ids because each
+         * menu should be considered as top level destinations.
+         */
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_live, R.id.nav_meetMe, R.id.nav_browse,R.id.nav_play,
-                R.id.nav_chat,R.id.nav_profileViewers,R.id.nav_likesYou,R.id.btm_nav_pets,
-                R.id.nav_fav,R.id.nav_inviteFriends,R.id.nav_friends)
+                R.id.nav_live, R.id.nav_meetMe, R.id.nav_browse, R.id.nav_play,
+                R.id.nav_chat, R.id.nav_profileViewers, R.id.nav_likesYou, R.id.btm_nav_pets,
+                R.id.nav_fav, R.id.nav_inviteFriends, R.id.nav_friends)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation
@@ -65,8 +67,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_browse, R.id.nav_chat, R.id.nav_live,R.id.nav_meetMe,R.id.btm_nav_pets,
-                R.id.nav_fav,R.id.nav_inviteFriends,R.id.nav_friends)
+                R.id.nav_browse, R.id.nav_chat, R.id.nav_live, R.id.nav_meetMe, R.id.btm_nav_pets,
+                R.id.nav_fav, R.id.nav_inviteFriends, R.id.nav_friends)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController1 = Navigation.findNavController(this,
@@ -76,7 +78,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
 
 
     //Resolving single click back Button Issue
@@ -92,7 +93,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void run() {
-                dblClickBack=false;
+                dblClickBack = false;
             }
         }, 2000);
     }
@@ -102,7 +103,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         // Inflate the menu; this adds items to the action bar if it is present.
         int menuId = R.menu.home;
         int menuItemId = R.id.action_settings;
-        openAppSettings(menu,menuId,menuItemId);
+        openAppSettings(menu, menuId, menuItemId);
         openProfileSettings();
 
 
@@ -110,26 +111,26 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     //opening ProfileSetting activity
-    public void openProfileSettings(){
+    public void openProfileSettings() {
         ImageButton mIbProfileSettings = findViewById(R.id.IbProfileSettings);
         mIbProfileSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this,ProfileSettings.class);
+                Intent intent = new Intent(HomeActivity.this, ProfileSettings.class);
                 startActivity(intent);
             }
         });
     }
 
     //opening Application Settings Activity
-    public void openAppSettings(Menu menu,int menuId, int itemId){
+    public void openAppSettings(Menu menu, int menuId, int itemId) {
         final MenuInflater inflater = getMenuInflater();
         inflater.inflate(menuId, menu);
         MenuItem menuItem = menu.findItem(itemId);
         menuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                Intent intent = new Intent(HomeActivity.this,AppSettings.class);
+                Intent intent = new Intent(HomeActivity.this, AppSettings.class);
                 startActivity(intent);
                 return false;
             }
