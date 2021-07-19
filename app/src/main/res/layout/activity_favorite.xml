@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
         app:layout_constraintStart_toStartOf="parent"
         >
@@ -39,11 +40,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-                app:srcCompat="@drawable/girl3" />
+                app:srcCompat="@drawable/girl1" />
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_margin="@dimen/dp_5"
